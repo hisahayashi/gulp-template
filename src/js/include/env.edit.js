@@ -1,0 +1,1 @@
+var env = {"path":{"home":"/","sitename":"test","description":"","keywords":""},"meta":{},"facebook":{"appid":"0000000000000000"},"ga":{"id":"UA-xxx-1"},"prod":true}

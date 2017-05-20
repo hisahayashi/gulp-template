@@ -1,0 +1,68 @@
+/* ===================================================
+*
+*  Webfonts Title: Yaku Han JP
+*  Author: Qrac
+*  URL: https://twitter.com/Qrac_jp
+*  "Noto Sans CJK JP" licensed under the SIL Open Font License
+*  https://www.google.com/get/noto/#/
+*
+=================================================== */
+
+$yakuhan-path: '../fonts/yakuhan/';
+
+@font-face {
+  font-family: 'YakuHanJP';
+  font-style: normal;
+  font-weight: 100;
+  src: url('#{$yakuhan-path}YakuHanJP-Thin.woff2') format('woff2'),
+  url('#{$yakuhan-path}YakuHanJP-Thin.woff') format('woff'),
+  url('#{$yakuhan-path}YakuHanJP-Thin.eot');
+}
+@font-face {
+  font-family: 'YakuHanJP';
+  font-style: normal;
+  font-weight: 200;
+  src: url('#{$yakuhan-path}YakuHanJP-Light.woff2') format('woff2'),
+  url('#{$yakuhan-path}YakuHanJP-Light.woff') format('woff'),
+  url('#{$yakuhan-path}YakuHanJP-Light.eot');
+}
+@font-face {
+  font-family: 'YakuHanJP';
+  font-style: normal;
+  font-weight: 300;
+  src: url('#{$yakuhan-path}YakuHanJP-DemiLight.woff2') format('woff2'),
+  url('#{$yakuhan-path}YakuHanJP-DemiLight.woff') format('woff'),
+  url('#{$yakuhan-path}YakuHanJP-DemiLight.eot');
+}
+@font-face {
+  font-family: 'YakuHanJP';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$yakuhan-path}YakuHanJP-Regular.woff2') format('woff2'),
+  url('#{$yakuhan-path}YakuHanJP-Regular.woff') format('woff'),
+  url('#{$yakuhan-path}YakuHanJP-Regular.eot');
+}
+@font-face {
+  font-family: 'YakuHanJP';
+  font-style: normal;
+  font-weight: 500;
+  src: url('#{$yakuhan-path}YakuHanJP-Medium.woff2') format('woff2'),
+  url('#{$yakuhan-path}YakuHanJP-Medium.woff') format('woff'),
+  url('#{$yakuhan-path}YakuHanJP-Medium.eot');
+}
+@font-face {
+  font-family: 'YakuHanJP';
+  font-style: normal;
+  font-weight: 700;
+  src: url('#{$yakuhan-path}YakuHanJP-Bold.woff2') format('woff2'),
+  url('#{$yakuhan-path}YakuHanJP-Bold.woff') format('woff'),
+  url('#{$yakuhan-path}YakuHanJP-Bold.eot');
+}
+@font-face {
+  font-family: 'YakuHanJP';
+  font-style: normal;
+  font-weight: 900;
+  src: url('#{$yakuhan-path}YakuHanJP-Black.woff2') format('woff2'),
+  url('#{$yakuhan-path}YakuHanJP-Black.woff') format('woff'),
+  url('#{$yakuhan-path}YakuHanJP-Black.eot');
+}

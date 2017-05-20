@@ -1,0 +1,23 @@
+node_modules
+bower_components
+dist
+dist.
+deploy_tree
+.sass-cache
+vendor
+ftppass.json
+
+# dusts
+.idea
+*.DS_Store
+*.ftppass
+*.iml
+*.log
+*.db
+
+# fonts
+*.eot
+*.svg
+*.ttf
+*.woff
+*.woff2
