@@ -4,10 +4,6 @@
   "description": "",
   "author": "hisahayashi",
   "devDependencies": {
-    "@fortawesome/fontawesome": "^1.1.5",
-    "@fortawesome/fontawesome-free-brands": "^5.0.10",
-    "@fortawesome/fontawesome-free-regular": "^5.0.10",
-    "@fortawesome/fontawesome-free-solid": "^5.0.10",
     "browser-sync": "^2.18.11",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
@@ -26,15 +22,21 @@
     "gulp-typescript": "^4.0.2",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
-    "ionicons": "^3.0.0",
     "require-dir": "^1.0.0",
     "run-sequence": "^2.2.1",
-    "simple-line-icons": "^2.4.1",
     "ts-loader": "^4.2.0",
     "typescript": "^2.8.3",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15",
-    "webpack-stream": "^4.0.3",
+    "webpack-stream": "^4.0.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-brands": "^5.0.10",
+    "@fortawesome/fontawesome-free-regular": "^5.0.10",
+    "@fortawesome/fontawesome-free-solid": "^5.0.10",
+    "ionicons": "^3.0.0",
+    "simple-line-icons": "^2.4.1",
     "yakuhanjp": "^3.0.0"
   },
   "scripts": {
