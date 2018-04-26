@@ -2,23 +2,23 @@
 
 // @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
-@import "./component/fonts/_font-awesome.scss";
-@import "./component/fonts/_simple-line-icons.scss";
-@import "./component/fonts/_black-tie.scss";
-@import "./component/fonts/_yakuhanjp.scss";
+@import "./components/fonts/_font-awesome.scss";
+@import "./components/fonts/_simple-line-icons.scss";
+@import "./components/fonts/_black-tie.scss";
+@import "./components/fonts/_yakuhanjp.scss";
 
-// @import "./component/_sprite.scss";
-@import "./component/_mixin.scss";
-@import "./component/_reset.scss";
-@import "./component/_common.scss";
+// @import "./components/_sprite.scss";
+@import "./components/_mixin.scss";
+@import "./components/_reset.scss";
+@import "./components/_common.scss";
 
-@import "./component/_header.scss";
-@import "./component/_footer.scss";
+@import "./components/_header.scss";
+@import "./components/_footer.scss";
 @import "./scene/_index.scss";
 @import "./scene/_second.scss";
 @import "./scene/_about.scss";
 
-@import "./component/_responsive.scss";
+@import "./components/_responsive.scss";
 
 // @import "./owl/_owl.carousel.scss";
 // @import "./owl/_owl.theme.scss";
