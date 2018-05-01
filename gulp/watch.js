@@ -18,7 +18,7 @@ gulp.task('watch', function() {
 
 gulp.task('watch-js', function(callback) {
   runSequence(
-    'env-js', 'ejs', 'webpack', 'uglify', 'clean-html', 'clean-envs', 'copy-json', callback
+    'env-js', 'ejs', 'concat', 'concat-libs', 'webpack', 'uglify', 'clean-html', 'clean-envs', 'copy-json', callback
   );
 });
 

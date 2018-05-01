@@ -18,7 +18,7 @@ gulp.task('default', function(callback) {
     'html', 'clean-html',
 
     // js
-    'concat', 'webpack', 'uglify',
+    'concat', 'concat-libs', 'webpack', 'uglify',
 
     // css
     'sass', 'autoprefixer', 'minify-css', 'clean-css',

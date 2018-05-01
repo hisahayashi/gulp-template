@@ -2,16 +2,23 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const glob = require('glob');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const env = process.env.NODE_ENV;
 
 let config = {
   mode: 'development',
   entry: {
-    app :'./src/assets/ts/entry.ts'
+    utils: glob.sync('./src/assets/js/utils/**.js'),
+    vendor: './src/assets/js/vendor/vendor.js',
+    app :'./src/assets/js/main/entry.ts'
   },
   output: {
     filename: 'bundle.js'
+  },
+  output: {
+    path: __dirname + '/build/assets/js',
+    filename: '[name].bundle.js'
   },
   resolve: {
     extensions: ['.ts', '.webpack.js', '.web.js', '.js']

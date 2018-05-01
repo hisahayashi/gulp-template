@@ -1,6 +1,6 @@
 /*------------------------------------------------------------*/
 /* console.log のかわり */
-var debug = function() {
+window.debug = function() {
   if( window.console && window.console.log ) {
     if( global.debug ){
       window.console.log.apply(console, arguments);
@@ -8,7 +8,7 @@ var debug = function() {
   }
 };
 
-var Utils = [];
+window.Utils = [];
 
 /*------------------------------------------------------------*/
 /*  */

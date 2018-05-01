@@ -9,8 +9,15 @@ var webpackConfig = require('../config/webpack.config');
 
 
 gulp.task('concat', function(callback) {
-  return gulp.src([config.assets + 'js/include/**/*'])
-    .pipe($.concat('include.js'))
+  return gulp.src([config.assets + 'js/env/**/*'])
+    .pipe($.concat('env.js'))
+    .pipe(gulp.dest(config.dest + 'assets/js'))
+    .on('end', function() {});
+});
+
+gulp.task('concat-libs', function(callback) {
+  return gulp.src(config.jsConfig.concatList)
+    .pipe($.concat('libs.js'))
     .pipe(gulp.dest(config.dest + 'assets/js'))
     .on('end', function() {});
 });

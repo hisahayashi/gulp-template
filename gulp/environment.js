@@ -5,7 +5,7 @@ const env = process.env.NODE_ENV;
 
 
 gulp.task('env-js', function(callback) {
-  return gulp.src([config.assets + 'js/include/env.js'])
+  return gulp.src([config.assets + 'js/env/env.js'])
     .pipe($.edit(function(src, callback) {
       var error = null;
       src += 'var env = ' + JSON.stringify(config.ejsConfig);
@@ -14,7 +14,7 @@ gulp.task('env-js', function(callback) {
     .pipe($.rename({
       suffix: '.edit',
     }))
-    .pipe(gulp.dest(config.assets + 'js/include'))
+    .pipe(gulp.dest(config.assets + 'js/env'))
     .on('end', function() {});
 });
 
@@ -36,7 +36,7 @@ gulp.task('env-php', function(callback) {
 
 gulp.task('clean-envs', function() {
   return gulp.src([
-      config.assets + 'js/include/env.edit.js',
+      config.assets + 'js/env/env.edit.js',
       config.src + 'php/app/env.edit.php'
     ])
     .pipe($.clean({

@@ -1,25 +1,30 @@
 @charset "utf-8";
 
+// base: animations, base, typography, and utilies.
+// components: have a single scss file for each individual component
+// layout: Header, footer, grid, navigation
+// pages: Have a single scss for each specific page
+// abstracts: handles function, mixins, and variables
+// vendor: handles 3rd party css
+// styles.scss
+
 // @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
-@import "./components/fonts/_font-awesome.scss";
-@import "./components/fonts/_simple-line-icons.scss";
-@import "./components/fonts/_black-tie.scss";
-@import "./components/fonts/_yakuhanjp.scss";
-
-// @import "./components/_sprite.scss";
-@import "./components/_mixin.scss";
-@import "./components/_reset.scss";
-@import "./components/_common.scss";
+// @import "./abstracts/fonts/_font-awesome.scss";
+// @import "./abstracts/fonts/_simple-line-icons.scss";
+// @import "./abstracts/fonts/_black-tie.scss";
+// @import "./abstracts/fonts/_yakuhanjp.scss";
+@import "./abstracts/_mixin-common.scss";
+@import "./abstracts/_mixin-background.scss";
+@import "./abstracts/_mixin-button.scss";
+@import "./base/_reset.scss";
+@import "./base/_common.scss";
+@import "./layout/_layout.scss";
 
 @import "./components/_header.scss";
 @import "./components/_footer.scss";
-@import "./scene/_index.scss";
-@import "./scene/_second.scss";
-@import "./scene/_about.scss";
+@import "./pages/_index.scss";
+@import "./pages/_second.scss";
+@import "./pages/_about.scss";
 
-@import "./components/_responsive.scss";
-
-// @import "./owl/_owl.carousel.scss";
-// @import "./owl/_owl.theme.scss";
-// @import "./owl/_owl.transitions.scss";
+@import "./layout/_responsive.scss";
