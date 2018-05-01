@@ -3,7 +3,7 @@
 
 #### 環境
 
-##### gulp + webpack + typescript + ejs + scss
+##### gulp + webpack + typescript + ejs + scss + (php)
 
 
 ---
@@ -26,4 +26,5 @@
 
 
   $ NODE_ENV=staging gulp
+
   $ NODE_ENV=production gulp
