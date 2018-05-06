@@ -76,9 +76,10 @@
   !*** ./src/assets/js/main/entry.ts ***!
   \*************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("class Main {\n    constructor() {\n        console.log('Hello! Node.js × TypeScript from Class');\n    }\n}\nconst main = new Main();\n\n\n//# sourceURL=webpack:///./src/assets/js/main/entry.ts?");
+"use strict";
+eval("\nclass Main {\n    constructor() {\n        console.log('Hello! Node.js × TypeScript from Class');\n    }\n}\nconst main = new Main();\n\n\n//# sourceURL=webpack:///./src/assets/js/main/entry.ts?");
 
 /***/ })
 

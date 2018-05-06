@@ -10,15 +10,15 @@ gulp.task('copy-img', function() {
       .pipe(gulp.dest(config.dest + 'assets/img/'));
   }
   else{
-    return gulp.src(config.assets + 'img/')
+    return gulp.src(config.assets + 'img/**/*')
       .pipe($.imagemin())
       .pipe(gulp.dest(config.dest + 'assets/img/'));
   }
 });
 
 gulp.task('copy-font', function() {
-  // return gulp.src(config.assets + 'font/')
-  //   .pipe(gulp.dest(config.dest + 'assets/fonts/'));
+  return gulp.src(config.assets + 'fonts/**/*')
+    .pipe(gulp.dest(config.dest + 'assets/fonts/'));
 });
 
 gulp.task('copy-json', function() {

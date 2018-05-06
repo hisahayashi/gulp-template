@@ -19,7 +19,7 @@ gulp.task('browser-sync', function() {
         baseDir: config.dest
       },
       port: port,
-      open: true,
+      open: false,
       notify: true,
       xip: false
     });

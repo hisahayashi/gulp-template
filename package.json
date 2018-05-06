@@ -31,13 +31,6 @@
     "webpack-stream": "^4.0.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.5",
-    "@fortawesome/fontawesome-free-brands": "^5.0.10",
-    "@fortawesome/fontawesome-free-regular": "^5.0.10",
-    "@fortawesome/fontawesome-free-solid": "^5.0.10",
-    "ionicons": "^3.0.0",
-    "simple-line-icons": "^2.4.1",
-    "yakuhanjp": "^3.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -4,3 +4,27 @@
 ------------------------------------------------*/
 #top{
 }
+
+.sample-font-awesome{
+  &:after{
+    @include sample-font-awesome();
+  }
+}
+
+.sample-black-tie{
+  &:after{
+    @include sample-black-tie();
+  }
+}
+
+.sample-ionicons{
+  &:after{
+    @include sample-ionicons();
+  }
+}
+
+.sample-simple-line-font{
+  &:after{
+    @include sample-simple-line-font();
+  }
+}

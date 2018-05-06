@@ -10,10 +10,18 @@
 
 // @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
-// @import "./abstracts/fonts/_font-awesome.scss";
-// @import "./abstracts/fonts/_simple-line-icons.scss";
-// @import "./abstracts/fonts/_black-tie.scss";
-// @import "./abstracts/fonts/_yakuhanjp.scss";
+// chartsheets
+// fontawesome: http://fontawesome.io/cheatsheet/
+// blacktie: ?
+// simple-line-icon: http://simplelineicons.com/
+// ionicons: http://ionicons.com/cheatsheet.html
+
+@import "./abstracts/fonts/_font-awesome.scss";
+@import "./abstracts/fonts/_simple-line-icons.scss";
+@import "./abstracts/fonts/_ionicons.scss";
+@import "./abstracts/fonts/_black-tie.scss";
+@import "./abstracts/fonts/_yakuhanjp.scss";
+
 @import "./abstracts/_mixin-common.scss";
 @import "./abstracts/_mixin-background.scss";
 @import "./abstracts/_mixin-button.scss";

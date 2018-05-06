@@ -1,36 +1,50 @@
 var gulp = require('gulp');
 var config = require('./config');
+var runSequence = require('run-sequence');
 var $ = config.$;
 const env = process.env.NODE_ENV;
 
 
 gulp.task('watch', function() {
-  gulp.watch(config.src + 'ejs/**/*.ejs', ['watch-js']);
-  gulp.watch(config.assets + 'js/**/*', ['watch-js']);
-  gulp.watch(config.assets + 'json/**/*', ['watch-js']);
-  gulp.watch(config.src + 'php/**/*', ['watch-php']);
 
-  var watch = gulp.watch(config.assets + 'sass/**/*', ['watch-css']);
+  var watch;
+
+  watch = gulp.watch(config.src + 'ejs/**/*.ejs', ['watch-html']);
+  watch = gulp.watch(config.assets + 'js/**/*', ['watch-js']);
+  watch = gulp.watch(config.assets + 'json/**/*', ['watch-js']);
+  watch = gulp.watch(config.src + 'php/**/*', ['watch-php']);
+  watch = gulp.watch(config.assets + 'sass/**/*', ['watch-css']);
+
+  watch.on('add', function(e) {
+    console.log('File ' + e.path + ' was ' + e.type + ', running tasks...');
+  });
+
   watch.on('change', function(e) {
     console.log('File ' + e.path + ' was ' + e.type + ', running tasks...');
   });
 });
 
+gulp.task('watch-html', function(callback) {
+  runSequence(
+    'env-js', 'html', 'clean-html', callback
+  );
+});
+
 gulp.task('watch-js', function(callback) {
   runSequence(
-    'env-js', 'ejs', 'concat', 'concat-libs', 'webpack', 'uglify', 'clean-html', 'clean-envs', 'copy-json', callback
+    'concat', 'concat-libs', 'webpack', 'uglify', 'copy-json', callback
   );
 });
 
 gulp.task('watch-php', function(callback) {
   runSequence(
-    'env-php', 'copy-php', 'clean-envs', callback
+    'env-php', 'copy-php', callback
   );
 });
 
 gulp.task('watch-css', function(callback) {
   runSequence(
-    'sass', 'pleeease', 'clean-css', callback
+    'sass', 'autoprefixer', 'clean-css', callback
   );
 });
 
