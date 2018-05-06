@@ -28,7 +28,7 @@ gulp.task('minify-css', function() {
   if(env !== 'production'){
     sourcemaps = $.sourcemaps.write()
   }
-  return gulp.src([config.dest + 'assets/css/*.css'])
+  return gulp.src([config.dest + 'assets/css/styles.css'])
     .pipe($.sourcemaps.init())
     .pipe($.cleanCss())
     .pipe($.rename({
