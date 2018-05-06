@@ -44,7 +44,7 @@ gulp.task('watch-php', function(callback) {
 
 gulp.task('watch-css', function(callback) {
   runSequence(
-    'sass', 'autoprefixer', 'clean-css', callback
+    'sass', 'autoprefixer', 'minify-css', 'clean-css', callback
   );
 });
 

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*------------------------------------------------
+   sample
+------------------------------------------------*/
+#sample{
+  padding: 60px 120px;
+  line-height: 1.8;
+
+  .cont{
+    margin: 0 0 50px 0;
+
+    &.iconfont{
+      display: flex;
+      justify-content: space-between;
+      p{
+        font-size: 18px;
+      }
+    }
+
+    h1{
+      margin: 0 0 15px 0;
+      font-size: 28px;
+    }
+
+    h3{
+      margin: 0 0 15px 0;
+      font-size: 14px;
+    }
+
+    p{
+    }
+
+  }
+}
+
+.sample-font-awesome{
+  &:after{
+    @include sample-font-awesome();
+  }
+}
+
+.sample-black-tie{
+  &:after{
+    @include sample-black-tie();
+  }
+}
+
+.sample-ionicons{
+  &:after{
+    @include sample-ionicons();
+  }
+}
+
+.sample-simple-line-font{
+  &:after{
+    @include sample-simple-line-font();
+  }
+}

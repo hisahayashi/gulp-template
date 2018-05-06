@@ -86,12 +86,12 @@ $font_roboto_cond: 'Roboto Condensed', sans-serif;
 /* --------------------------------------------- */
 @mixin sample-font-awesome(){
   @include fa-icon();
-  content: $fa-var-adjust;
+  content: $fa-var-home;
 }
 
 @mixin sample-black-tie(){
   @include bt-icon();
-  content: $bt-var-phone;
+  content: $bt-var-home;
   font-weight: 900; // solid
   font-weight: 700; // bold
   font-weight: 200; // light
@@ -99,12 +99,12 @@ $font_roboto_cond: 'Roboto Condensed', sans-serif;
 
 @mixin sample-ionicons(){
   @include ion-font();
-  content: $ionicon-var-alert;
+  content: $ionicon-var-home;
 }
 
 @mixin sample-simple-line-font(){
   @include simple-line-font();
-  content: $slf-var-clock;
+  content: $slf-var-home;
 }
 
 /* --------------------------------------------- */
