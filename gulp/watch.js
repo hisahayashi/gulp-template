@@ -10,6 +10,7 @@ gulp.task('watch', function() {
   var watch;
 
   watch = gulp.watch(config.src + 'ejs/**/*.ejs', ['watch-html']);
+  watch = gulp.watch(config.assets + 'ts/**/*', ['watch-js']);
   watch = gulp.watch(config.assets + 'js/**/*', ['watch-js']);
   watch = gulp.watch(config.assets + 'json/**/*', ['watch-js']);
   watch = gulp.watch(config.src + 'php/**/*', ['watch-php']);
@@ -32,7 +33,7 @@ gulp.task('watch-html', function(callback) {
 
 gulp.task('watch-js', function(callback) {
   runSequence(
-    'concat', 'concat-libs', 'webpack', 'uglify', 'copy-json', callback
+    'env-js', 'concat', 'concat-libs', 'webpack', 'uglify', 'copy-json', callback
   );
 });
 

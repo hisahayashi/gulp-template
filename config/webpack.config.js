@@ -9,9 +9,8 @@ const env = process.env.NODE_ENV;
 let config = {
   mode: 'development',
   entry: {
-    utils: glob.sync('./src/assets/js/utils/**.js'),
     vendor: './src/assets/js/vendor/vendor.js',
-    app :'./src/assets/js/main/entry.ts'
+    app :'./src/assets/ts/App.ts'
   },
   output: {
     filename: 'bundle.js'

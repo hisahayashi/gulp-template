@@ -23,7 +23,7 @@ gulp.task('concat-libs', function(callback) {
 });
 
 gulp.task('webpack', function(callback) {
-  return gulp.src(['./src/ts/*.ts'])
+  return gulp.src([config.assets + 'ts/*'])
     .pipe($.plumber())
     .pipe(webpackStream(webpackConfig, webpack))
     .pipe(gulp.dest(config.dest + 'assets/js'))
