@@ -77,7 +77,7 @@ let Component = {
     // this.$refs.pageTitle.subTitle = 'Hello Top Page. (changed from variable)'
 
     // Fade in MyComponent
-    $(this.$el).fadeOut(0)
+    // $(this.$el).fadeOut(0)
 
     // Call to My Methods
     this.render()
@@ -90,7 +90,7 @@ let Component = {
 
     async render(){
       await sleep(500)
-      $(this.$el).fadeIn(500)
+      // $(this.$el).fadeIn(500)
     }
   }
 }
