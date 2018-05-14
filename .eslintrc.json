@@ -1,0 +1,34 @@
+{
+  "extends": [
+        "eslint:recommended",
+        "plugin:vue/recommended"
+    ],
+  "rules": {
+    "semi": ["error", "never", {"beforeStatementContinuationChars": "never"}],
+    "semi-spacing": ["error", {"after": true, "before": false}],
+    "semi-style": ["error", "first"],
+    "no-extra-semi": "error",
+    "no-unexpected-multiline": "error",
+    "no-unreachable": "error",
+
+    "vue/max-attributes-per-line": [2, {
+      "singleline": 2,
+      "multiline": {
+        "max": 2,
+        "allowFirstLine": true
+      }
+    }]
+  },
+  "globals": {
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "parser": "typescript-eslint-parser"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jquery": true
+  }
+}

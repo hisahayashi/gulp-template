@@ -1,29 +1,35 @@
 <template>
-<div>
+  <div>
 
-  <div id="page-title">
-    <page-title ref="pageTitle"></page-title>
-  </div>
-
-  <section id="link-component" class="cont">
-    <div>
-      <router-link to="/about">Go to about</router-link>
+    <div id="page-title">
+      <page-title ref="pageTitle"/>
     </div>
-  </section>
 
-  <div id="icon-font-preview">
-    <icon-font-preview></icon-font-preview>
+    <section 
+      id="link-component" 
+      class="cont">
+      <div>
+        <router-link to="/about">Go to about</router-link>
+      </div>
+    </section>
+
+    <div id="icon-font-preview">
+      <icon-font-preview/>
+    </div>
+
+    <section 
+      id="vue-container" 
+      class="cont">
+      <my-component ref="myComponent"/>
+    </section>
+
+    <section 
+      id="vue-single-container" 
+      class="cont">
+      <my-single-file-component ref="mySingleFileComponent"/>
+    </section>
+
   </div>
-
-  <section id="vue-container" class="cont">
-    <my-component ref="myComponent"></my-component>
-  </section>
-
-  <section id="vue-single-container" class="cont">
-    <my-single-file-component ref="mySingleFileComponent"></my-single-file-component>
-  </section>
-
-</div>
 </template>
 
 <script>
@@ -84,7 +90,7 @@ let Component = {
 
     async render(){
       await sleep(500)
-      $(this.$el).fadeIn(500);
+      $(this.$el).fadeIn(500)
     }
   }
 }

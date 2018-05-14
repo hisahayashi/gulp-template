@@ -1,17 +1,17 @@
 <template>
-<div>
+  <div>
 
-  <div id="page-title">
-    <page-title ref="pageTitle"></page-title>
-  </div>
-
-  <section id="link-component" class="cont">
-    <div>
-      <router-link to="/">Go to Top</router-link>
+    <div id="page-title">
+      <page-title ref="pageTitle"/>
     </div>
-  </section>
 
-</div>
+    <section id="link-component" class="cont">
+      <div>
+        <router-link to="/">Go to Top</router-link>
+      </div>
+    </section>
+
+  </div>
 </template>
 
 <script>

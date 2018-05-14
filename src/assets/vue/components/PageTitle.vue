@@ -1,10 +1,10 @@
 <template>
-<div>
-  <section class="cont">
-    <h1>{{title}}</h1>
-    <p>{{subTitle}}</p>
-  </section>
-</div>
+  <div>
+    <section class="cont">
+      <h1>{{ title }}</h1>
+      <p>{{ subTitle }}</p>
+    </section>
+  </div>
 </template>
 
 <script>

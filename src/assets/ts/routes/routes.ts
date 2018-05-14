@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import top from '../../vue/pages/top.vue';
-import about from '../../vue/pages/about.vue';
+import top from '../../vue/pages/top.vue'
+import about from '../../vue/pages/about.vue'
 
 Vue.use(VueRouter)
 
@@ -22,4 +22,4 @@ const router = new VueRouter({
   ],
 })
 
-export default router;
+export default router
