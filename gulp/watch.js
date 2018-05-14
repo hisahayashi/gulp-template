@@ -12,6 +12,7 @@ gulp.task('watch', function() {
   watch = gulp.watch(config.src + 'ejs/**/*.ejs', ['watch-html']);
   watch = gulp.watch(config.assets + 'ts/**/*', ['watch-js']);
   watch = gulp.watch(config.assets + 'js/**/*', ['watch-js']);
+  watch = gulp.watch(config.assets + 'vue/**/*', ['watch-js']);
   watch = gulp.watch(config.assets + 'json/**/*', ['watch-js']);
   watch = gulp.watch(config.src + 'php/**/*', ['watch-php']);
   watch = gulp.watch(config.assets + 'sass/**/*', ['watch-css']);

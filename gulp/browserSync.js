@@ -3,7 +3,7 @@ var config = require('./config');
 var $ = config.$;
 
 var browserSync = require('browser-sync');
-var port = 8000;
+var port = 3000;
 
 gulp.task('browser-sync', function() {
 

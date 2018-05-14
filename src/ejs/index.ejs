@@ -14,23 +14,15 @@
 <%- include _common/header %>
 
 <!-- contents -->
-<article class="contents" id="sample">
+<main class="contents" id="sample">
 <div class="inner">
 
-<section class="cont">
-<h1>gulp-template</h1>
-<p>Hello World.</p>
-</section>
-
-<section class="cont iconfont">
-<div><h3>sample-font-awesome</h3><p class='sample-font-awesome'></p></div>
-<div><h3>sample-black-tie</h3><p class='sample-black-tie'></p></div>
-<div><h3>sample-ionicons</h3><p class='sample-ionicons'></p></div>
-<div><h3>sample-simple-line-font</h3><p class='sample-simple-line-font'></p></div>
-</section>
+<div id="app">
+<router-view></router-view>
+</div>
 
 </div>
-</article>
+</main>
 <!-- //contents -->
 
 <%- include _common/footer %>
