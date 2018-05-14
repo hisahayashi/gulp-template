@@ -1,7 +1,7 @@
-var gulp = require('gulp');
-var config = require('./config');
-var $ = config.$;
-const env = process.env.NODE_ENV;
+var gulp = require('gulp')
+var config = require('./config')
+var $ = config.$
+// const env = process.env.NODE_ENV
 
 
 gulp.task('clean', function() {
@@ -9,5 +9,5 @@ gulp.task('clean', function() {
     .pipe($.clean({
       force: true
     }))
-    .on('end', function() {});
-});
+    .on('end', function() {})
+})

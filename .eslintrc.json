@@ -4,6 +4,8 @@
         "plugin:vue/recommended"
     ],
   "rules": {
+    "no-console": 0,
+    
     "semi": ["error", "never", {"beforeStatementContinuationChars": "never"}],
     "semi-spacing": ["error", {"after": true, "before": false}],
     "semi-style": ["error", "first"],

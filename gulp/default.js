@@ -1,8 +1,8 @@
-var gulp = require('gulp');
-var config = require('./config');
-var $ = config.$;
+var gulp = require('gulp')
+// var config = require('./config')
+// var $ = config.$
 
-var runSequence = require('run-sequence');
+var runSequence = require('run-sequence')
 
 
 gulp.task('default', function(callback) {
@@ -31,5 +31,5 @@ gulp.task('default', function(callback) {
 
     // preview
     'browser-sync', 'watch', callback
-  );
-});
+  )
+})

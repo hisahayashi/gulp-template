@@ -1,4 +1,4 @@
-const config = {
+module.exports = {
   concatList: [
   // './src/assets/js/libs/modernizr.js',
   // './src/assets/js/libs/imagesloaded.js',
@@ -13,4 +13,3 @@ const config = {
   // './src/assets/js/libs/stats.min.js',
   ]
 }
-export default config

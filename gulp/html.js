@@ -1,10 +1,10 @@
-var gulp = require('gulp');
-var config = require('./config');
-var $ = config.$;
-const env = process.env.NODE_ENV;
+var gulp = require('gulp')
+var config = require('./config')
+var $ = config.$
+// const env = process.env.NODE_ENV
 
 
-gulp.task('html', function(callback) {
+gulp.task('html', function() {
   return gulp.src([config.src + 'ejs/**/*.ejs'])
     .pipe($.ejs({
       jsonData: config.ejsConfig
@@ -14,8 +14,8 @@ gulp.task('html', function(callback) {
       extname: '.html'
     }))
     .pipe(gulp.dest(config.dest + '/'))
-    .on('end', function() {});
-});
+    .on('end', function() {})
+})
 
 gulp.task('clean-html', function() {
   return gulp.src([
@@ -25,5 +25,5 @@ gulp.task('clean-html', function() {
     .pipe($.clean({
       force: true
     }))
-    .on('end', function() {});
-});
+    .on('end', function() {})
+})

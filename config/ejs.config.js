@@ -1,4 +1,4 @@
-const config = {
+module.exports = {
   path: {
     root: "/",
     endpoint: "/"
@@ -15,4 +15,3 @@ const config = {
     id: "UA-xxx-1"
   }
 }
-export default config

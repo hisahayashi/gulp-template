@@ -2,7 +2,7 @@
   <div class="component-inner">
     <h2>Vue Single File Component</h2>
     <p>
-      <input v-type="count" type="number" 
+      <input v-model="count" type="number" 
              placeholder="edit me">
       <button @click="countDown">Count Down</button>
       <button @click="countUp">Count Up</button>

@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var config = require('./config');
-var $ = config.$;
+var gulp = require('gulp')
+var config = require('./config')
+var $ = config.$
 
-var browserSync = require('browser-sync');
-var port = 3000;
+var browserSync = require('browser-sync')
+var port = 3000
 
 gulp.task('browser-sync', function() {
 
@@ -22,7 +22,7 @@ gulp.task('browser-sync', function() {
       open: false,
       notify: true,
       xip: false
-    });
-  });
+    })
+  })
 
-});
+})

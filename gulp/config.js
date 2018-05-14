@@ -1,14 +1,14 @@
-var gulp = require('gulp');
-const env = process.env.NODE_ENV;
+// var gulp = require('gulp')
+const env = process.env.NODE_ENV
 
 /* config */
-var configDir = '../config/';
+var configDir = '../config/'
 
 /* load gulp plugin */
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'gulp.*'],
-  replaceString: /\bgulp[\-.]/
-});
+  replaceString: /\bgulp[-.]/
+})
 
 /* environment setting */
 var paths = {
@@ -24,28 +24,28 @@ var paths = {
     root: 'http://example.com/',
     endpoint: 'http://api.example.com/',
   }
-};
-var rootPath = paths.local;
+}
+var rootPath = paths.local
 
 switch (env) {
   case 'local':
-    rootPath = paths.local;
-    break;
+    rootPath = paths.local
+    break
   case 'staging':
-    rootPath = paths.staging;
-    break;
+    rootPath = paths.staging
+    break
   case 'production':
-    rootPath = paths.production;
-    break;
+    rootPath = paths.production
+    break
 }
 
-console.log('NODE_ENV:', env);
-console.log('rootPath:', rootPath);
+console.log('NODE_ENV:', env)
+console.log('rootPath:', rootPath)
 
 var baseConfig = {
   sourceDir: 'src/',
   buildDir: 'build/'
-};
+}
 
 var config = {
 
@@ -62,16 +62,16 @@ var config = {
 
   /* environment setting */
   path: rootPath,
-};
+}
 
 /* update ejsConfig */
-config.ejsConfig.path.root = rootPath.root;
+config.ejsConfig.path.root = rootPath.root
 config.ejsConfig.path.endpoint = rootPath.endpoint
 if(env === 'production'){
-  config.ejsConfig.production = true;
+  config.ejsConfig.production = true
 }
 else{
-  config.ejsConfig.production = false;
+  config.ejsConfig.production = false
 }
 
-module.exports = config;
+module.exports = config

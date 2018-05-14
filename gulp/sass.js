@@ -1,7 +1,7 @@
-var gulp = require('gulp');
-var config = require('./config');
-var $ = config.$;
-const env = process.env.NODE_ENV;
+var gulp = require('gulp')
+var config = require('./config')
+var $ = config.$
+const env = process.env.NODE_ENV
 
 
 gulp.task('sass', function() {
@@ -11,8 +11,8 @@ gulp.task('sass', function() {
       compass: false,
       includePaths: config.sassConfig.includePaths
     }).on('error', $.sass.logError))
-    .pipe(gulp.dest(config.dest + 'assets/css/'));
-});
+    .pipe(gulp.dest(config.dest + 'assets/css/'))
+})
 
 gulp.task('autoprefixer', function() {
   return gulp.src([config.dest + 'assets/css/styles.css'])
@@ -20,11 +20,11 @@ gulp.task('autoprefixer', function() {
       browsers: config.sassConfig.prefixer,
       cascade: true
     }))
-    .pipe(gulp.dest(config.dest + 'assets/css/'));
-});
+    .pipe(gulp.dest(config.dest + 'assets/css/'))
+})
 
 gulp.task('minify-css', function() {
-  var sourcemaps = $.util.noop();
+  var sourcemaps = $.util.noop()
   if(env !== 'production'){
     sourcemaps = $.sourcemaps.write()
   }
@@ -35,8 +35,8 @@ gulp.task('minify-css', function() {
       suffix: '.min'
     }))
     .pipe(sourcemaps)
-    .pipe(gulp.dest(config.dest + 'assets/css/'));
-});
+    .pipe(gulp.dest(config.dest + 'assets/css/'))
+})
 
 gulp.task('clean-css', function() {
   return gulp.src([
@@ -47,5 +47,5 @@ gulp.task('clean-css', function() {
     .pipe($.clean({
       force: true
     }))
-    .on('end', function() {});
-});
+    .on('end', function() {})
+})
