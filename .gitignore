@@ -1,7 +1,7 @@
 node_modules
 bower_components
-dist
-dist.
+build
+build.
 deploy_tree
 .sass-cache
 vendor
