@@ -30,6 +30,7 @@
     "run-sequence": "^2.2.1",
     "ts-loader": "^4.2.0",
     "typescript": "^2.8.3",
+    "typescript-eslint-parser": "^15.0.0",
     "vue-loader": "^15.0.9",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.6.0",

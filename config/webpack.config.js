@@ -12,7 +12,7 @@ let config = {
   devtool: env === 'production' ? false : 'source-map',
 
   entry: {
-    vendor: './src/assets/js/vendor/vendor.js',
+    vendor: './src/assets/ts/vendor/vendor.ts',
     app :'./src/assets/ts/App.ts',
   },
 

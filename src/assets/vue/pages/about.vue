@@ -11,16 +11,30 @@
       </div>
     </section>
 
+    <section id="api-component" class="cont">
+      <ul>
+        <li v-for="item in results" :key="item.url">
+          <p><b>{{ item.title }}</b></p>
+          <p><small>{{ item.description }}</small></p>
+        </li>
+      </ul>
+    </section>
+
   </div>
 </template>
 
 <script>
+import Axios from 'axios'
 import PageTitle from '../components/PageTitle.vue'
 
 let Component = {
 
   data() {
     return {
+      results: [{
+        title: '',
+        description: ''
+      }]
     }
   },
 
@@ -29,6 +43,14 @@ let Component = {
   },
 
   created() {
+    Axios.get('assets/json/index.json')
+    .then((response) => {
+      console.log(response.data)
+      this.results = response.data
+      this.$forceUpdate()
+    }).catch(error => {
+        console.log('error:', error)
+    })
   },
 
   mounted() {

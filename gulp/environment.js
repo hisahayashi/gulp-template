@@ -18,6 +18,20 @@ gulp.task('env-js', function() {
     .on('end', function() {})
 })
 
+// gulp.task('env-ts', function() {
+//   return gulp.src([config.assets + 'ts/env/env.ts'])
+//     .pipe($.edit(function(src, callback) {
+//       var error = null
+//       src += 'export default ' + JSON.stringify(config.ejsConfig)
+//       callback(error, src)
+//     }))
+//     .pipe($.rename({
+//       suffix: '.edit',
+//     }))
+//     .pipe(gulp.dest(config.assets + 'ts/env'))
+//     .on('end', function() {})
+// })
+
 gulp.task('env-php', function() {
   return gulp.src([config.src + 'php/app/env.php'])
     .pipe($.edit(function(src, callback) {

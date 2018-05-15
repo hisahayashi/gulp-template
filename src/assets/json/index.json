@@ -1,45 +1,44 @@
-{
-"data": [{
-  "url": "/assets/img/thumbs/00001",
-  "length": 12
+[{
+  "title": "Title from JSON 1",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00002",
-  "length": 12
+  "title": "Title from JSON 2",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00003",
-  "length": 12
+  "title": "Title from JSON 3",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00004",
-  "length": 12
+  "title": "Title from JSON 4",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00005",
-  "length": 12
+  "title": "Title from JSON 5",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00006",
-  "length": 12
+  "title": "Title from JSON 6",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00007",
-  "length": 12
+  "title": "Title from JSON 7",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00008",
-  "length": 12
+  "title": "Title from JSON 8",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00009",
-  "length": 12
+  "title": "Title from JSON 9",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00010",
-  "length": 12
+  "title": "Title from JSON 10",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00011",
-  "length": 12
+  "title": "Title from JSON 11",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00012",
-  "length": 12
+  "title": "Title from JSON 12",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00013",
-  "length": 12
+  "title": "Title from JSON 13",
+  "description": "Description text."
 }, {
-  "url": "/assets/img/thumbs/00014",
-  "length": 12
+  "title": "Title from JSON 14",
+  "description": "Description text."
 }]
-}
+
